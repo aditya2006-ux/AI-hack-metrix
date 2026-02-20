@@ -1,0 +1,35 @@
+export const DRUG_DATABASE = {
+  "Aspirin": { smiles: "CC(=O)Oc1ccccc1C(=O)O", molecular_weight: 180.16, logp: 1.19, bcs_class: "I", therapeutic_class: "NSAID / Antiplatelet" },
+  "Ibuprofen": { smiles: "CC(C)Cc1ccc(cc1)C(C)C(=O)O", molecular_weight: 206.28, logp: 3.97, bcs_class: "II", therapeutic_class: "NSAID" },
+  "Acetaminophen": { smiles: "CC(=O)Nc1ccc(O)cc1", molecular_weight: 151.16, logp: 0.46, bcs_class: "I", therapeutic_class: "Analgesic / Antipyretic" },
+  "Metformin": { smiles: "CN(C)C(=N)NC(=N)N", molecular_weight: 129.16, logp: -1.43, bcs_class: "III", therapeutic_class: "Antidiabetic" },
+  "Atorvastatin": { smiles: "CC(C)c1c(C(=O)Nc2ccccc2F)c(-c2ccccc2)c(-c2ccc(F)cc2)n1...", molecular_weight: 558.64, logp: 6.36, bcs_class: "II", therapeutic_class: "Statin" },
+  "Lisinopril": { smiles: "OC(=O)C(CCc1ccccc1)NC(CC(=O)O)C(=O)N1CCCC1C(=O)O", molecular_weight: 405.49, logp: -1.54, bcs_class: "III", therapeutic_class: "ACE Inhibitor" },
+  "Omeprazole": { smiles: "CC1=CN=C(C)C(CC2=NC3=CC=CC=C3N2)=C1", molecular_weight: 345.42, logp: 2.23, bcs_class: "II", therapeutic_class: "Proton Pump Inhibitor" },
+  "Amoxicillin": { smiles: "CC1(C)SC2C(NC(=O)C(N)c3ccc(O)cc3)C(=O)N2C1C(=O)O", molecular_weight: 365.40, logp: 0.87, bcs_class: "I", therapeutic_class: "Antibiotic" },
+  "Metoprolol": { smiles: "CC(C)NCC(O)COc1ccc(CCOC)cc1", molecular_weight: 267.36, logp: 1.88, bcs_class: "I", therapeutic_class: "Beta-blocker" },
+  "Simvastatin": { smiles: "CCC(C)(C)C(=O)OC1CC(C)C=C2CC(O)CC(=O)O", molecular_weight: 418.57, logp: 4.68, bcs_class: "II", therapeutic_class: "Statin" },
+  "Amlodipine": { smiles: "CCOC(=O)C1=C(COCCN)NC(C)=C(C(=O)OCC)C1c1ccccc1Cl", molecular_weight: 408.88, logp: 3.0, bcs_class: "I", therapeutic_class: "Calcium Channel Blocker" },
+  "Losartan": { smiles: "CCCc1nc(-c2ccccc2Cl)c2ccccc2o1", molecular_weight: 422.91, logp: 4.01, bcs_class: "II", therapeutic_class: "ARB Antihypertensive" },
+  "Warfarin": { smiles: "OC(=O)CCCC1CC(=O)c2ccccc2O1", molecular_weight: 308.33, logp: 2.7, bcs_class: "I", therapeutic_class: "Anticoagulant" },
+  "Metronidazole": { smiles: "Cc1ncc([N+](=O)[O-])n1CCO", molecular_weight: 171.15, logp: -0.02, bcs_class: "I", therapeutic_class: "Antibiotic / Antiprotozoal" },
+  "Ciprofloxacin": { smiles: "OC(=O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O", molecular_weight: 331.34, logp: 0.28, bcs_class: "IV", therapeutic_class: "Fluoroquinolone Antibiotic" },
+  "Fluoxetine": { smiles: "CNCCC(Oc1ccc(C(F)(F)F)cc1)c1ccccc1", molecular_weight: 309.33, logp: 4.05, bcs_class: "I", therapeutic_class: "SSRI Antidepressant" },
+  "Sertraline": { smiles: "CNC1CCC(c2ccc(Cl)c(Cl)c2)c2ccccc21", molecular_weight: 306.23, logp: 5.06, bcs_class: "II", therapeutic_class: "SSRI Antidepressant" },
+  "Alprazolam": { smiles: "Cc1nnc2n1-c1ccc(Cl)cc1C(=Nc1ccccc1)CC2", molecular_weight: 308.76, logp: 2.12, bcs_class: "I", therapeutic_class: "Benzodiazepine / Anxiolytic" },
+  "Clopidogrel": { smiles: "COC(=O)C(c1ccccc1Cl)N1CCc2sccc2C1", molecular_weight: 321.82, logp: 2.64, bcs_class: "I", therapeutic_class: "Antiplatelet" },
+  "Tamoxifen": { smiles: "CCN(CC)/C=C/C(=C(c1ccccc1)/c1ccc(OCCN(CC)CC)cc1)c1ccccc1", molecular_weight: 371.51, logp: 6.3, bcs_class: "II", therapeutic_class: "SERM / Anticancer" },
+  "Morphine": { smiles: "OC1=CC2=C3CC(=O)C4=C3C1=CC(O)C4N2C", molecular_weight: 285.34, logp: 0.9, bcs_class: "I", therapeutic_class: "Opioid Analgesic" },
+  "Gabapentin": { smiles: "NCC1(CC(=O)O)CCCCC1", molecular_weight: 171.24, logp: -1.1, bcs_class: "III", therapeutic_class: "Anticonvulsant" },
+  "Prednisolone": { smiles: "OCC(=O)C1(O)CCC2C3CCC4=CC(=O)C=CC4=C3C(O)CC21C", molecular_weight: 360.44, logp: 1.62, bcs_class: "I", therapeutic_class: "Corticosteroid" },
+  "Methotrexate": { smiles: "CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(CC(=O)O)cc1", molecular_weight: 454.44, logp: -1.85, bcs_class: "III", therapeutic_class: "Antifolate / Anticancer" },
+  "Furosemide": { smiles: "NS(=O)(=O)c1cc(C(=O)O)c(NCc2ccco2)cc1Cl", molecular_weight: 330.74, logp: 2.03, bcs_class: "IV", therapeutic_class: "Loop Diuretic" },
+  "Hydrochlorothiazide": { smiles: "NS(=O)(=O)c1cc2c(cc1Cl)NCNS2(=O)=O", molecular_weight: 297.74, logp: -0.07, bcs_class: "IV", therapeutic_class: "Thiazide Diuretic" },
+  "Levothyroxine": { smiles: "NC(Cc1cc(I)c(Oc2cc(I)c(O)c(I)c2)c(I)c1)C(=O)O", molecular_weight: 776.87, logp: 3.16, bcs_class: "II", therapeutic_class: "Thyroid Hormone" },
+  "Enalapril": { smiles: "CCOC(=O)C(CCc1ccccc1)NC(C)C(=O)N1CCCC1C(=O)O", molecular_weight: 376.45, logp: 0.11, bcs_class: "III", therapeutic_class: "ACE Inhibitor" },
+  "Sildenafil": { smiles: "CCCc1nn(C)c2c1nc(C)nc2N1CCN(Cc2ccc(S(=O)(=O)N3CCOCC3)cc2)CC1", molecular_weight: 474.58, logp: 1.9, bcs_class: "II", therapeutic_class: "PDE5 Inhibitor" },
+  "Doxycycline": { smiles: "OC1=C(C(=O)N)C2CC3CC4=C(O)c5c(O)cccc5C(=O)C4(O)C3(O)C2C1", molecular_weight: 444.43, logp: -0.02, bcs_class: "I", therapeutic_class: "Tetracycline Antibiotic" }
+};
+
+export const getDrugNames = () => Object.keys(DRUG_DATABASE);
+export const getDrugInfo = (name) => DRUG_DATABASE[name] || null;

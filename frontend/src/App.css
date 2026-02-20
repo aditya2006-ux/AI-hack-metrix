@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  background: #02060a;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #02060a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 242, 255, 0.2);
+  border-radius: 2px;
+}
+
+input {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
