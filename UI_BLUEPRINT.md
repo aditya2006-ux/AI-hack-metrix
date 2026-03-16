@@ -57,7 +57,10 @@ To achieve this level of Polish, the frontend team should utilize:
 ### A. The Landing Page ("The Hook")
 The goal here is immediate awe.
 
-* **Background**: A slow-moving, interactive WebGL particle field that reacts to the mouse. Or a massive, slow-spinning 3D representation of a complex protein.
+* **Background Environment**: A **Deep Violet / Black** radial gradient scene. 
+* **Floating 3D Elements**: 
+    * A massive, softly glowing **Rotating DNA Helix** anchoring the scene.
+    * Cinematic floating particles scattered in the air: **pills (some breaking apart with powder escaping)**, **syringes/injections**, and **bandages**, all gently drifting and rotating with parallax effects as the user scrolls or moves the mouse.
 * **Hero Text**: Large gradient text (Cyan to Purple): *"Universal Deciphering of Chemical Potential."*
 * **The Input**: Instead of a boring text box, the SMILES input should look like a command-line interface or a futuristic search bar.
     * When the user types a SMILES string, a 2D drawing of the molecule should instantly render *below* the input bar, updating in real-time as they type.
@@ -66,7 +69,10 @@ The goal here is immediate awe.
 ### B. The Analysis Dashboard (Stage 1 & 2)
 Throw away the standard grid layout. 
 
-* **The Canvas**: The background of the entire dashboard is the **3D Molecule Viewer**. The molecule is massive, slowly rotating behind the UI panels. 
+* **The Canvas (Premium 3D Molecule Viewer)**: 
+    * The background of the entire dashboard is the **3D Molecule Viewer**. It absolutely MUST NOT look like a generic, flat chemical viewer.
+    * **Rendering Upgrades**: Apply realistic materials (glass, matte plastic, or glowing neon) to the atoms/bonds. Implement dynamic stage lighting, ambient occlusion, and a post-processing **bloom effect** so the molecule truly glows in the dark environment. It should look cinematic and visually impactful, whether it's a known drug or an experimental compound.
+    * The molecule rotates slowly and reacts fluidly to mouse movements.
 * **The Panels (Glassmorphism)**: 
     * Information is displayed in floating, draggable, or gracefully expanding glass panels overlapping the 3D background.
 * **Loading State (The "Computation" Animation)**:
@@ -95,6 +101,17 @@ When a user clicks "Find Biological Targets":
 * **Persistent Orb**: A small glowing orb in the bottom-right corner.
 * **Expansion**: Clicking it doesn't open a generic chatbox. It opens a sleek, side-drawer with `backdrop-filter`.
 * **Tool Cards**: When the agent uses a tool (e.g., "Running docking simulation"), it renders a beautiful inline UI card showing the progress bar of that specific tool, not just plain text.
+
+### F. The "My Section" User Hub (Profile & Settings)
+A top-right persistent glass button for user management.
+* **The Trigger**: A sleek avatar icon, potentially with a glowing status ring.
+* **The Panel**: A beautifully styled glassmorphism dropdown menu (using Radix UI Primitives for perfect accessibility and animation).
+* **Menu Items**:
+    1. **Personal Details**: View/edit baseline user profile info.
+    2. **Manage Accounts / Add Account**: For enterprise or multi-user lab environments.
+    3. **Search History**: A slide-out panel showing recent SMILES queries and analysis reports.
+    4. **Settings**: Theme toggles, default units, notification preferences.
+    5. **Help & Feedback**: Direct line to support or submitting AI prediction feedback.
 
 ---
 
