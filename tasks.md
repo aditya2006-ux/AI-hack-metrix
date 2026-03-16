@@ -202,3 +202,86 @@ Each team member posts in group chat daily:
 ---
 
 > *6 minds, 1 mission: From Molecule to Medicine in Seconds 🧬*
+
+---
+
+## 🛰️ Product Roadmap — Insilico-Inspired Expansion
+
+> **Strategy**: Master each stage before docking the next module. No shortcuts.
+> See `IMPLEMENTATION_GUIDE.md` for full technical specifications.
+
+### Stage 1 — Chemistry Intelligence ✅ (Current)
+- [x] SMILES parsing & molecular descriptors
+- [x] AI formulation engine (Llama-3.3-70B)
+- [x] Solubility / Excipient / Stability / PK panels
+- [x] 3D Molecular Viewer
+- [x] PDF report export
+- [ ] RDKit descriptor engine (pKa, TPSA, Lipinski)
+- [ ] ADMET prediction service (absorption, distribution, metabolism, excretion, toxicity)
+- [ ] Structural alerts (PAINS, Brenk filters)
+
+### Stage 2 — Target & Mechanism Layer
+- [ ] ChEMBL similarity search for target prediction
+- [ ] BindingDB integration
+- [ ] UniProt protein data integration
+- [ ] Drug–target–pathway network visualization (cytoscape.js)
+- [ ] Disease association mapping (DisGeNET)
+- [ ] `POST /api/predict-targets` endpoint
+
+### Stage 3 — Drug Discovery Engine
+- [ ] Molecule generator (REINVENT / MolGPT)
+- [ ] SELFIES representation support
+- [ ] Synthetic accessibility scoring
+- [ ] AutoDock Vina integration
+- [ ] Docking visualization (binding pocket + interactions)
+- [ ] `POST /api/generate-molecules` endpoint
+- [ ] `POST /api/dock` endpoint
+
+### Stage 4 — Clinical Intelligence
+- [ ] ClinicalTrials.gov data ingestion
+- [ ] Trial success probability predictor (Phase I/II/III)
+- [ ] Trial design assistant (sample size, endpoints, biomarkers)
+- [ ] FDA Orange Book integration
+- [ ] `POST /api/predict-trial` endpoint
+
+### Stage 5 — Digital Lab
+- [ ] Virtual metabolism simulator (CYP450 site prediction)
+- [ ] Organ-specific toxicity simulator
+- [ ] Synthetic patient population generator
+- [ ] Population PK simulation
+- [ ] Virtual trial runner
+
+### Stage 6 — Enterprise Platform
+- [ ] Multi-tenant architecture
+- [ ] Team workspaces with RBAC
+- [ ] API key management
+- [ ] Audit logging for compliance
+- [ ] Usage-based billing
+- [ ] Docker + Kubernetes deployment
+
+### Stage 7 — AI Research Agent
+- [ ] LangChain tool orchestrator
+- [ ] Agent tool wrappers (molecule_analyzer, admet_predictor, target_predictor, docking_engine, clinical_predictor)
+- [ ] WebSocket streaming for agent reasoning
+- [ ] Chat UI with inline tool execution cards
+- [ ] Multi-turn conversation memory
+- [ ] Suggested prompts sidebar
+
+---
+
+## 🏗️ Technology Progression
+
+| Stage | New Backend Tech | New Frontend Tech | Models / Datasets |
+|-------|-----------------|-------------------|-------------------|
+| 1 ✅ | FastAPI, RDKit | React, 3Dmol.js | Llama-3.3-70B |
+| 2 | ChEMBL API, BindingDB | cytoscape.js | GNN, Morgan FP |
+| 3 | AutoDock Vina, Open Babel | DockingViewer | REINVENT, MolGPT |
+| 4 | ClinicalTrials.gov API | Trial dashboard | GBM, Transformer |
+| 5 | Population PK solver | Simulation viz | SmartCyp, ProTox |
+| 6 | PostgreSQL, Redis, Celery | Auth UI, Workspaces | Multi-tenant infra |
+| 7 | LangChain, WebSocket | Chat UI | Claude / GPT-4 agent |
+
+---
+
+> *"Become the best SMILES-analysis engine first. Then expand."*
+> — PHARMA-AI Product Philosophy
